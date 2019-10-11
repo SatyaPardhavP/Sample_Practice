@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 
 public class UploadFile {
 	static WebDriver driver;
-	
+
 	@Test (priority = 1)
 	public void openBrowser() {
 		String path = "driver/chromedriver.exe";
@@ -27,12 +27,12 @@ public class UploadFile {
 		String url = "https://demo.stqatools.com/fileupload.php";
 		driver.navigate().to(url);
 	}
-	
+
 	// By using Keyboard (drawback is file explorer window is not closed)
 	@Test (priority = 2, enabled = false)
 	public void fileupload() throws InterruptedException {
-	//	driver.findElement(By.id("fileToUpload")).click();
-	//	driver.findElement(By.id("fileToUpload")).sendKeys("C:\\Users\\spamulapati\\Desktop\\Invoice.pdf");
+		//	driver.findElement(By.id("fileToUpload")).click();
+		//	driver.findElement(By.id("fileToUpload")).sendKeys("C:\\Users\\spamulapati\\Desktop\\Invoice.pdf");
 		Thread.sleep(3000);
 		WebElement abc = driver.findElement(By.id("fileToUpload"));
 		Thread.sleep(2000);
@@ -42,7 +42,7 @@ public class UploadFile {
 		Thread.sleep(2000);
 		abc.sendKeys(Keys.ENTER);		
 	}
-	
+
 	//Robot class
 	@Test (priority = 3, enabled = true)
 	public void fileUploadRobot() throws InterruptedException, AWTException {
@@ -50,10 +50,10 @@ public class UploadFile {
 		driver.findElement(By.id("fileToUpload")).click();
 		Thread.sleep(2000);
 		String filePath = "C:\\Users\\spamulapati\\Desktop\\Invoice.pdf";
-		
+
 		StringSelection stringSelection = new StringSelection(filePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-		
+
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
@@ -64,7 +64,7 @@ public class UploadFile {
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
-	
+
 	//AutoIT
 	@Test(priority = 4, enabled = false)
 	public void AutoITFile() {
@@ -74,7 +74,7 @@ public class UploadFile {
 		 * ControlClick("Open","","Button1"); Sleep(2000);
 		 */
 	}
-	
+
 	@Test (priority = 5)
 	public void brwClose() {
 		driver.close();

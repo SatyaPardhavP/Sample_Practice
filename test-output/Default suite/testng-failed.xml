@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample_Test.InvokeBrowser">
+      <class name="sample_Test.UploadFileRobotClass">
         <methods>
-          <include name="printInkBrw"/>
+          <include name="fileupload"/>
         </methods>
-      </class> <!-- sample_Test.InvokeBrowser -->
+      </class> <!-- sample_Test.UploadFileRobotClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

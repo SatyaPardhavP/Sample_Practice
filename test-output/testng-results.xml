@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6197" started-at="2019-10-11T09:43:04 IST" finished-at="2019-10-11T09:43:10 IST">
+  <suite name="Default suite" duration-ms="6931" started-at="2019-10-11T12:35:47 IST" finished-at="2019-10-11T12:35:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6197" started-at="2019-10-11T09:43:04 IST" finished-at="2019-10-11T09:43:10 IST">
-      <class name="sample_Test.InvokeBrowser">
-        <test-method status="PASS" signature="InvokeBrw()[pri:0, instance:sample_Test.InvokeBrowser@60438a68]" name="InvokeBrw" duration-ms="4749" started-at="2019-10-11T09:43:04 IST" finished-at="2019-10-11T09:43:09 IST">
+    <test name="Default test" duration-ms="6931" started-at="2019-10-11T12:35:47 IST" finished-at="2019-10-11T12:35:54 IST">
+      <class name="sample_Test.SeleniumBasics">
+        <test-method status="PASS" signature="openBrowser()[pri:1, instance:sample_Test.SeleniumBasics@60438a68]" name="openBrowser" duration-ms="6277" started-at="2019-10-11T12:35:47 IST" finished-at="2019-10-11T12:35:54 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvokeBrw -->
-        <test-method status="PASS" signature="printInkBrw()[pri:1, instance:sample_Test.InvokeBrowser@60438a68]" name="printInkBrw" duration-ms="1161" started-at="2019-10-11T09:43:09 IST" finished-at="2019-10-11T09:43:10 IST">
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="lbldetails()[pri:2, instance:sample_Test.SeleniumBasics@60438a68]" name="lbldetails" duration-ms="604" started-at="2019-10-11T12:35:54 IST" finished-at="2019-10-11T12:35:54 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printInkBrw -->
-        <test-method status="PASS" signature="brwClose()[pri:2, instance:sample_Test.InvokeBrowser@60438a68]" name="brwClose" duration-ms="219" started-at="2019-10-11T09:43:10 IST" finished-at="2019-10-11T09:43:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- brwClose -->
-      </class> <!-- sample_Test.InvokeBrowser -->
+        </test-method> <!-- lbldetails -->
+      </class> <!-- sample_Test.SeleniumBasics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
