@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 
 
-public class UploadFileRobotClass {
+public class UploadFile {
 	static WebDriver driver;
 	
 	@Test (priority = 1)
