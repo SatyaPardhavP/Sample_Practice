@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5513" started-at="2019-10-11T09:25:15 IST" finished-at="2019-10-11T09:25:20 IST">
+  <suite name="Default suite" duration-ms="6197" started-at="2019-10-11T09:43:04 IST" finished-at="2019-10-11T09:43:10 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5513" started-at="2019-10-11T09:25:15 IST" finished-at="2019-10-11T09:25:20 IST">
+    <test name="Default test" duration-ms="6197" started-at="2019-10-11T09:43:04 IST" finished-at="2019-10-11T09:43:10 IST">
       <class name="sample_Test.InvokeBrowser">
-        <test-method status="PASS" signature="InvokeBrw()[pri:0, instance:sample_Test.InvokeBrowser@60438a68]" name="InvokeBrw" duration-ms="4103" started-at="2019-10-11T09:25:15 IST" finished-at="2019-10-11T09:25:19 IST">
+        <test-method status="PASS" signature="InvokeBrw()[pri:0, instance:sample_Test.InvokeBrowser@60438a68]" name="InvokeBrw" duration-ms="4749" started-at="2019-10-11T09:43:04 IST" finished-at="2019-10-11T09:43:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeBrw -->
-        <test-method status="PASS" signature="printInkBrw()[pri:1, instance:sample_Test.InvokeBrowser@60438a68]" name="printInkBrw" duration-ms="1180" started-at="2019-10-11T09:25:19 IST" finished-at="2019-10-11T09:25:20 IST">
+        <test-method status="PASS" signature="printInkBrw()[pri:1, instance:sample_Test.InvokeBrowser@60438a68]" name="printInkBrw" duration-ms="1161" started-at="2019-10-11T09:43:09 IST" finished-at="2019-10-11T09:43:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printInkBrw -->
-        <test-method status="PASS" signature="brwClose()[pri:2, instance:sample_Test.InvokeBrowser@60438a68]" name="brwClose" duration-ms="172" started-at="2019-10-11T09:25:20 IST" finished-at="2019-10-11T09:25:20 IST">
+        <test-method status="PASS" signature="brwClose()[pri:2, instance:sample_Test.InvokeBrowser@60438a68]" name="brwClose" duration-ms="219" started-at="2019-10-11T09:43:10 IST" finished-at="2019-10-11T09:43:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brwClose -->
