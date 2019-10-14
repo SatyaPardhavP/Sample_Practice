@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample_Test.UploadFileRobotClass">
+      <class name="sample_Test.AutoComplete_TextBox">
         <methods>
-          <include name="fileupload"/>
+          <include name="selectValues"/>
         </methods>
-      </class> <!-- sample_Test.UploadFileRobotClass -->
+      </class> <!-- sample_Test.AutoComplete_TextBox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
