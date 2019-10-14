@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample_Test.AutoComplete_TextBox">
+      <class name="sample_Test.WriteDatainExcel">
         <methods>
-          <include name="selectValues"/>
+          <include name="writeExcelData"/>
         </methods>
-      </class> <!-- sample_Test.AutoComplete_TextBox -->
+      </class> <!-- sample_Test.WriteDatainExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
