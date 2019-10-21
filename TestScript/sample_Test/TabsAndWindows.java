@@ -18,32 +18,30 @@ public class TabsAndWindows {
 		
 	}
 	
-	@Test (priority = 1, enabled = false)
-	public void tabs() throws InterruptedException {
-		String url = "https://demo.stqatools.com/Tabs.php";
-		driver.get(url);
-		Thread.sleep(3000);
-		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(tabs.get(1));
-		Thread.sleep(5000);
-		driver.switchTo().window(tabs.get(0));
-	}
+	/*
+	 * @Test (priority = 1, enabled = false) public void tabs() throws
+	 * InterruptedException { String url = "https://demo.stqatools.com/Tabs.php";
+	 * driver.get(url); Thread.sleep(3000); ArrayList<String> tabs = new
+	 * ArrayList<String>(driver.getWindowHandles());
+	 * driver.switchTo().window(tabs.get(1)); Thread.sleep(5000);
+	 * driver.switchTo().window(tabs.get(0)); }
+	 */
 
 	@Test (priority = 2, enabled = true)
 	public void newWindow() throws InterruptedException {
 		String url = "https://demo.stqatools.com/Windows.php";
 		driver.get(url);
 		Thread.sleep(3000);
-		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.findElement(By.xpath("//button[contains(text(),'New Message Window')]")).click();
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());		
 		Thread.sleep(3000);
 		//driver.switchTo().window(tabs.get(2));
-		driver.switchTo().window(tabs.get(1));
+		driver.switchTo().window(tabs.get(0));
 		Thread.sleep(3000);
 		System.out.println("Child window");
 		driver.close();
 		Thread.sleep(5000);
-		driver.switchTo().window(tabs.get(0));
+		driver.switchTo().window(tabs.get(1));
 	}
 	
 }
